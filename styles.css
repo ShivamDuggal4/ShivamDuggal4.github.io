@@ -1,0 +1,24 @@
+<style>
+    h1 { padding : 0; margin : 0; }
+    body { padding : 20px 0; font-family : Arial; font-size : 16px; background-image : url("img/bg.png"); } 
+    #container { width : 900px; margin : 0 auto; background-color : #fff; padding : 50px;  text-align: left; box-shadow: 0px 0px 10px #999;; }
+    #me { margin-left : 25px; border : 0 solid black; float : right; margin-bottom : 0; margin-right:25px;}
+    #content { display : block; margin-right : 275px;}
+    a { text-decoration : none; }
+    a:hover { text-decoration : underline; }
+    a:link,a:visited
+    {color: #1367a7;}    
+
+    a.invisible { color : inherit; text-decoration : inherit; }
+    .publogo { margin-top : 20px; margin-right : 10px; float : left; border : 0; width: 200px; vertical-align: middle;}
+    
+    .publication { clear : left; padding-bottom : 10px;}
+    .codelogo { margin-right : 10px; float : left; border : 0;}
+    .code { clear : left; padding-bottom : 10px; vertical-align :middle;} 
+    .code .download a { display : block; margin : 0 15px; float : left;}
+    #simpsons { margin : 5px auto; text-align : center; color : #B7B7B7; }
+    #footer {
+	  text-align: right;
+	  font-size: 10;
+	}
+</style>	
