@@ -52,7 +52,7 @@
   }
   heading {
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-    font-size: 17px; /* 19 */
+    font-size: 16px; /* 19 */
     font-weight: 600 /* 1000 */
   }
   strong {
@@ -96,14 +96,14 @@
   }
   paperhighlight {
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 530;
     color: rgb(200, 50, 50);
   }
 
   highlightdate {
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 530;
     line-height: 2pt;
     text-align: left;
@@ -112,7 +112,7 @@
 
   highlighttext {
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 2pt;
     text-align: left;
@@ -120,7 +120,7 @@
   }
   specialhighlighttext {
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 2pt;
     color: rgb(200, 50, 50);
