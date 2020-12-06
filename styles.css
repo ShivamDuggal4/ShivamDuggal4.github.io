@@ -105,7 +105,7 @@
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 530;
-    line-height: 2pt;
+    /*line-height: 3pt;*/
     text-align: left;
     /*color: rgb(200, 50, 50);*/
   }
@@ -114,7 +114,7 @@
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 2pt;
+    /*line-height: 3pt;*/
     text-align: left;
     /*color: rgb(200, 50, 50);*/
   }
