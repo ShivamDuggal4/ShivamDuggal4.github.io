@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TARS-3D</title>
+  <link rel="icon" href="static/images/cmu_logo.png" type="image/png">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <!-- Bootstrap core CSS -->
+  <!--link href="bootstrap.min.css" rel="stylesheet"-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/main.js"></script>
+</head>
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Topologically-Aware Deformation Fields for <br>Single-View 3D Reconstruction</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://shivamduggal4.github.io/">Shivam Duggal</a>&emsp;</span>
+            <span class="author-block">
+              <a href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Carnegie Mellon University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="./static/paper/main.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="./static/paper/supplementary.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/hSWaN_6Ir1c"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/google/nerfies"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/teaser.png" height="100%" width="100%"/><br/><br/>
+      <h2 class="subtitle has-text-justified">
+        <span class="dnerf" margin-bottom: 0px;>TARS</span> is a state of the art single-view image reconstruction system, which can be trained on unpaired image collections from internet (given camera poses). Alonside generating high-fidelity shapes, it produces dense 3D (topologically-aware) correspondence field for free (without any correspondence supervision).
+      </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present a new framework for learning 3D object shapes and dense cross-object 3D correspondences from just an unaligned category-specific image collection. The 3D shapes are generated implicitly as deformations to a category-specific signed distance field and are learned in an unsupervised manner solely from unaligned image collections without any 3D supervision .
+          </p>
+          <p>
+            Generally, image collections on the internet contain several intra-category geometric and topological variations, for example, different chairs can have different topologies, which makes the task of joint shape and correspondence estimation much more challenging.
+            Because of this, prior works either focus on learning each 3D object shape individually without modeling cross-instance correspondences or perform joint shape and correspondence estimation on categories with minimal intra-category topological variations.
+          </p>
+          <p>
+            We overcome these restrictions by learning a topologically-aware implicit deformation field that maps a 3D point in the object space to a higher dimensional point in the category-specific canonical space.
+            At inference time, given a single image, we reconstruct the underlying 3D shape by first implicitly deforming each 3D point in the object space to the learned category-specific canonical space using the topologically-aware deformation field and then reconstructing the 3D shape as a canonical signed distance field.
+            Both canonical shape and deformation field are learned end-to-end in an inverse-graphics fashion using a learned recurrent ray marcher (SRN) as a differentiable rendering module. Our approach, dubbed TARS, achieves state-of-the-art reconstruction fidelity on several datasets: ShapeNet, Pascal3D+, CUB, and Pix3D chairs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body cub-container">
+    <div class="container">
+      <center>
+        <h2 class="title is-4"><span style="background-color:  #424949; color: white; border-radius: 7px; padding-left:10px; padding-right:10px; padding-top:5px; padding-bottom:5px;"> Single Image 3D Reconstruction: CUBS-200-2011</span></h2><br/>
+        <table align=center width="1000px" style="background-color:white; border:1px solid;">
+          <tr>
+            <td> <h1 style="font-size:20px;"><b><center>Input Image</center></h1></b></td>
+            <td> <h1 style="font-size:20px;"><b><center>CMR</center></h1></b></td>
+            <td> <h1 style="font-size:20px;"><b><center>SDF-SRN</center></h1></b></td>
+            <td> <h1 style="font-size:20px;"><b><center>TARS <i>(Ours)</i></center></h1></b></td>
+          </tr>
+          <tr style="height: 20px;">
+            <td colspan="3"></td>
+          </tr>
+          <tr>
+            <td> <img class="rounded" width="260px" height="50px" src="./static/images/cubs_comparison/images/244.jpg"/> 
+            <td> <img class="rounded" width="250px" height="50px" src="./static/images/cubs_comparison/cmr/244.gif"/> </td>
+            <td> <img class="rounded" width=340px height=50px src="./static/images/cubs_comparison/sdfsrn/244.gif"/> </td>
+            <td> <img class="rounded" width="260px" height="50px" src="./static/images/cubs_comparison/tars/244.gif"/> </td>
+          </tr>
+          <tr>
+            <td> <img class="rounded" width=320px height=50px src="./static/images/cubs_comparison/images/1375.jpg"/> </td>
+            <td> <img class="rounded" width=300px height=20px src="./static/images/cubs_comparison/cmr/1375.gif"/> </td>
+            <td> <img class="rounded" width=200px height=20px src="./static/images/cubs_comparison/sdfsrn/1375.gif"/> </td>
+            <td> <img class="rounded" width=190px height=20px src="./static/images/cubs_comparison/tars/1375.gif"/> </td>
+          </tr>
+          <tr>
+            <td> <img class="rounded" width=280px height=50px src="./static/images/cubs_comparison/images/1630.jpg"/> </td>
+            <td> <img class="rounded" width=220px height=20px src="./static/images/cubs_comparison/cmr/1630.gif"/> </td>
+            <td> <img class="rounded" width=220px height=20px src="./static/images/cubs_comparison/sdfsrn/1630.gif"/> </td>
+            <td> <img class="rounded" width=240px height=20px src="./static/images/cubs_comparison/tars/1630.gif"/> </td>
+            <td/>
+          </tr>
+          <tr>
+            <td> <img class="rounded" width=300px height=50px src="./static/images/cubs_comparison/images/1813.jpg"/> </td>
+            <td> <img class="rounded" width=300px height=20px src="./static/images/cubs_comparison/cmr/1813.gif"/> </td>
+            <td> <img class="rounded" width=320px height=150px src="./static/images/cubs_comparison/sdfsrn/1813.gif"/> </td>
+            <td> <img class="rounded" width=220px height=50px src="./static/images/cubs_comparison/tars/1813.gif"/> </td>
+          </tr>
+          <tr align="center">
+            <td align="center"> <img class="rounded" width=300px height=50px src="./static/images/cubs_comparison/images/2085.jpg"/> </td>
+            <td align="center"> <img class="rounded" width=250px height=20px src="./static/images/cubs_comparison/cmr/2085.gif"/> </td>
+            <td align="center"> <img class="rounded" width=350px height=180px src="./static/images/cubs_comparison/sdfsrn/2085.gif"/> </td>
+            <td align="center"> <img class="rounded" width=350px height=20px src="./static/images/cubs_comparison/tars/2085.gif"/> </td>
+            <td/>
+          </tr>
+          <tr>
+            <td> <h1 style="font-size:20px;"><b><center>Input Image</center></h1></b></td>
+            <td> <h1 style="font-size:20px;"><b><center>CMR</center></h1></b></td>
+            <td> <h1 style="font-size:20px;"><b><center>SDF-SRN</center></h1></b></td>
+            <td> <h1 style="font-size:20px;"><b><center>TARS <i>(Ours)</i></center></h1></b></td>
+          </tr>
+          <tr></tr>
+          
+        </table>
+      </center>
+    </div>
+  </div>
+  </section> <br/><br/><br/><br/><br/>
+
+
+  <section class="hero is-light is-small">
+  <div class="hero-body chair-container">
+    <div class="container">
+      <center>
+        <h2 class="title is-4"><span style="background-color:  #424949; color: white; border-radius: 7px; padding-left:10px; padding-right:10px; padding-top:5px; padding-bottom:5px;"> Single Image 3D Reconstruction: Pix3D chairs (trained on Shapenet)</span></h2><br/>
+        <table align=center width="800px" style="background-color:white; border:1px solid;">
+          <tr>
+            <td> <h1 style="font-size:20px;"><b><center>Input Image</center></h1></b></td>
+            <td> <h1 style="font-size:20px;"><b><center>SDF-SRN</center></h1></b></td>
+            <td> <h1 style="font-size:20px;"><b><center>TARS <i>(Ours)</i></center></h1></b></td>
+          </tr>
+          <tr style="height: 20px;">
+            <td colspan="3"></td>
+          </tr>
+          <tr>
+            <td> <img class="rounded" width="560px" height="50px" src="./static/images/pix3d_shapenet_chairs_comparison/images/109.jpg"/> 
+            <td> <img class="rounded" width=560px height=50px src="./static/images/pix3d_shapenet_chairs_comparison/sdfsrn/109.gif"/> </td>
+            <td> <img class="rounded" width="560px" height="50px" src="./static/images/pix3d_shapenet_chairs_comparison/tars/109.gif"/> </td>
+          </tr>
+          <tr>
+            <td> <img class="rounded" width="560px" height="50px" src="./static/images/pix3d_shapenet_chairs_comparison/images/153.jpg"/>
+            <td> <img class="rounded" width=560px height=20px src="./static/images/pix3d_shapenet_chairs_comparison/sdfsrn/153.gif"/> </td>
+            <td> <img class="rounded" width=560px height=20px src="./static/images/pix3d_shapenet_chairs_comparison/tars/153.gif"/> </td>
+          </tr>
+          <tr>
+            <td> <img class="rounded" width="560px" height="50px" src="./static/images/pix3d_shapenet_chairs_comparison/images/214.jpg"/>
+            <td> <img class="rounded" width=560px height=20px src="./static/images/pix3d_shapenet_chairs_comparison/sdfsrn/214.gif"/> </td>
+            <td> <img class="rounded" width=560px height=20px src="./static/images/pix3d_shapenet_chairs_comparison/tars/214.gif"/> </td>
+            <td/>
+          </tr>
+          <!-- <tr>
+            <td> <img class="rounded" width="260px" height="50px" src="./static/images/pix3d_shapenet_chairs_comparison/images/520.jpg"/>
+            <td> <img class="rounded" width=320px height=150px src="./static/images/pix3d_shapenet_chairs_comparison/sdfsrn/520.gif"/> </td>
+            <td> <img class="rounded" width=220px height=50px src="./static/images/pix3d_shapenet_chairs_comparison/tars/520.gif"/> </td>
+          </tr> -->
+          <tr align="center">
+            <td> <img class="rounded" width="560px" height="50px" src="./static/images/pix3d_shapenet_chairs_comparison/images/630.jpg"/>
+            <td align="center"> <img class="rounded" width=560px height=180px src="./static/images/pix3d_shapenet_chairs_comparison/sdfsrn/630.gif"/> </td>
+            <td align="center"> <img class="rounded" width=560px height=20px src="./static/images/pix3d_shapenet_chairs_comparison/tars/630.gif"/> </td>
+            <td/>
+          </tr>
+          <tr style="height: 20px;">
+            <td colspan="3"></td>
+          </tr>
+          <tr>
+            <td> <h1 style="font-size:20px;"><b><center>Input Image</center></h1></b></td>
+            <td> <h1 style="font-size:20px;"><b><center>SDF-SRN</center></h1></b></td>
+            <td> <h1 style="font-size:20px;"><b><center>TARS <i>(Ours)</i></center></h1></b></td>
+          </tr>
+          <tr></tr>
+
+          
+        </table>
+      </center>
+    </div>
+  </div>
+  </section><br/><br/><br/><br/><br/>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body chair-container">
+    <div class="container">
+      <center>
+        <h2 class="title is-4"><span style="background-color:  #424949; color: white; border-radius: 7px; padding-left:10px; padding-right:10px; padding-top:5px; padding-bottom:5px;"> Single Image 3D Reconstruction: Pascal3D chairs</span></h2><br/>
+        <img src="./static/images/pascal3d_chairs/chairs_pascal.png" width=90% height=90% style="background-color:white; border:1px solid;">
+        </table> -->
+      </center>
+    </div>
+  </div>
+  </section>
+ 
+
+
+
+<!-- Method Overview. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Method Overview</h2>
+            <img src="static/images/architecture.png"><br/>
+            <h2 class="subtitle has-text-justified">
+              <b>Overview of TARS</b>: Given a single image, we first map a 3D point in object space to a higher-dimensional canonical space using our <i>learned topologically-aware deformation field</i>. The canonical point is then mapped to its SDF value using the <i>Canonical Shape Generator module</i>. We leverage an <i>LSTM-based differentiable renderer</i> to guide the learning of deformation and signed distance fields.
+            </h2>
+      </div>
+    </div> 
+  </div>
+</section>
+<!-- Method Overview. -->
+
+
+
+
+<!-- Paper video. -->
+<section class="section">   
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://youtube.com/embed/hSWaN_6Ir1c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Paper video. -->
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{duggal2022tars3D,
+  author    = {Duggal, Shivam and Pathak, Deepak},
+  title     = {Topologically-Aware Deformation Fields for Single-View 3D Reconstruction},
+  journal   = {CVPR},
+  year      = {2022},
+}</code></pre>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+  <h2 class="title">Acknowledgements</h2>
+  <div id="acknowledgement">
+    <table align=center>
+      <tr><td><left>
+      We would like to thank Shamit Lal, Jason Zhang, Alex Li, Ananye Agarwal, and Ankit Ramchandani for their feedback on the paper. We also thank Chen-Hsuan Lin for providing details on the SoftRas baseline and the Pascal3D dataset and thank Ankit Ramchandani for inpainting chair meshes for the texture transfer experiment.
+    </left></td></tr>
+    </table>
+  </div>  
+  </div>
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>Page template borrowed from <a href="https://github.com/nerfies/nerfies.github.io"><span class="nerfies">Nerfies</span></a>.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
