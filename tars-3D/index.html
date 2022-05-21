@@ -69,7 +69,7 @@
                   <span>Paper</span>
                 </a>
               </span>
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="./static/paper/supplementary.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -77,7 +77,7 @@
                   </span>
                   <span>Supplementary</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Video Link. -->
               <span class="link-block">
                 <a href="https://youtu.be/hSWaN_6Ir1c"
@@ -90,7 +90,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -112,7 +112,7 @@
     <div class="hero-body">
       <img src="static/images/teaser.png" height="100%" width="100%"/><br/><br/>
       <h2 class="subtitle has-text-justified">
-        <span class="dnerf" margin-bottom: 0px;>TARS</span> is a state of the art single-view image reconstruction system, which can be trained on unpaired image collections from internet (given camera poses). Alonside generating high-fidelity shapes, it produces dense 3D (topologically-aware) correspondence field for free (without any correspondence supervision).
+        <span class="dnerf" margin-bottom: 0px;>TARS</span> is a state of the art single-view image reconstruction system, which can be trained on unpaired image collections from internet (given camera poses). Alonside generating high-fidelity shapes, it produces dense 3D (topologically-aware) correspondence field for free (without any direct correspondence supervision).
       </h2>
       </div>
     </div>
@@ -127,7 +127,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present a new framework for learning 3D object shapes and dense cross-object 3D correspondences from just an unaligned category-specific image collection. The 3D shapes are generated implicitly as deformations to a category-specific signed distance field and are learned in an unsupervised manner solely from unaligned image collections without any 3D supervision .
+            We present a framework for learning 3D object shapes and dense cross-object 3D correspondences from just an unaligned category-specific image collection. The 3D shapes are generated implicitly as deformations to a category-specific signed distance field and are learned in an unsupervised manner solely from unaligned image collections and their poses without any 3D supervision.
           </p>
           <p>
             Generally, image collections on the internet contain several intra-category geometric and topological variations, for example, different chairs can have different topologies, which makes the task of joint shape and correspondence estimation much more challenging.
@@ -334,7 +334,7 @@
   <div id="acknowledgement">
     <table align=center>
       <tr><td><left>
-      We would like to thank Shamit Lal, Jason Zhang, Alex Li, Ananye Agarwal, and Ankit Ramchandani for their feedback on the paper. We also thank Chen-Hsuan Lin for providing details on the SoftRas baseline and the Pascal3D dataset and thank Ankit Ramchandani for inpainting chair meshes for the texture transfer experiment.
+      We would like to thank Shamit Lal, Jason Zhang, Alex Li, Ananye Agarwal for feedback on the paper and Chen-Hsuan Lin for providing details on the SoftRas baseline and the Pascal3D dataset. We are grateful to Ankit Ramchandani for help before the deadline by painting chair meshes for texture transfer experiment. This work is supported by DARPA Machine Common Sense program.
     </left></td></tr>
     </table>
   </div>  
