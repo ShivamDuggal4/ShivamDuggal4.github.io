@@ -75,7 +75,7 @@
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
     font-size: 38px;
     font-weight: 400;
-    line-height: 20pt
+    line-height: 20pt;
   }
   paperheading {
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
@@ -137,31 +137,45 @@
       border-color: Black;
   }
 
-.container{  /* fixed width */
-    margin:auto;
-    padding:10px;
-    width:940px;
-    text-align:left;
-    position:relative;
-    font-family:"OpenSans",Helvetica ,Arial,sans-serif;
-    font-size: 11pt;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 150%;
-    color: rgb(0,0,125);/*#000000;*/
-    background-color:rgb(255,255,255);
-    -moz-border-radius: 15px;
-    border-radius: 10px;
-    -moz-box-shadow: 4px 4px 6px #888;
-    -webkit-box-shadow: 4px 4px 6px #888;
-    box-shadow: 4px 4px 6px #888;
-}
+  .container{  /* fixed width */
+      margin:auto;
+      padding:10px;
+      width:940px;
+      text-align:left;
+      position:relative;
+      font-family:"OpenSans",Helvetica ,Arial,sans-serif;
+      font-size: 11pt;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 150%;
+      color: rgb(0,0,125);/*#000000;*/
+      background-color:rgb(255,255,255);
+      -moz-border-radius: 15px;
+      border-radius: 10px;
+      -moz-box-shadow: 4px 4px 6px #888;
+      -webkit-box-shadow: 4px 4px 6px #888;
+      box-shadow: 4px 4px 6px #888;
+  }
 
 
-.info-icons{
-    font-size: 12pt;
-    font-style: normal;
-    font-weight: normal;
-}
+  .info-icons{
+      font-size: 12pt;
+      font-style: normal;
+      font-weight: normal;
+  }
 
+  /*hr {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }*/
+
+  .gradient-underline{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
+    background-position: 0 1.5em;
+    background-repeat: no-repeat;
+    background-size: 200% 1.5px;
+    }
 </style>
