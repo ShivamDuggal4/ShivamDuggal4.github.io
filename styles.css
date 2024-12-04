@@ -38,9 +38,9 @@
 
   }
 
-  .publication a{
+  /*.publication a{
     text-decoration: underline;
-  }
+  }*/
 
   body,td,th {
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
@@ -140,7 +140,7 @@
   .container{  /* fixed width */
       margin:auto;
       padding:10px;
-      width:940px;
+      width:960px;
       text-align:left;
       position:relative;
       font-family:"OpenSans",Helvetica ,Arial,sans-serif;
